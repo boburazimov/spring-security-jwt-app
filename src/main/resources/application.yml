@@ -1,0 +1,24 @@
+server:
+  port: 8080
+#  servlet:
+#    context-path: /api
+servlet:
+  multipart:
+    # value in mega-bytes
+    max-file-size: 10
+    enabled: true
+application:
+  name: SECURITYAPP
+spring:
+  profiles:
+    active: dev
+  security:
+#    user:
+#      name: admin
+#      password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+#JWT Token key
+jwt.secret: securityapp
